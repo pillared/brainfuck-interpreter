@@ -17,3 +17,7 @@
 As I have only uploaded the C file, you must compile the code before running: gcc -o ./bf ./brainfuck.c
 
 Run the executable with the bf.txt: ./bf ./bf.txt
+
+Program cannot-do's:
+ * Will not throw fail if there is a begin loop but not end loop or if there is a nested loop.
+ * Will continue interpretation after reading a non-defined syntax. This will cause unexpected output.
