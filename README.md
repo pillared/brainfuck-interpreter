@@ -1,6 +1,5 @@
 # brainfuck-interpreter
-* brainfuck.c takes a text file bf.txt as input.
-* bf.txt contains code written in the esoteric language Brainfuck, and interprets it.
+* brainfuck.c takes a text file bf.txt as input, which contains code written in the esoteric language Brainfuck, and interprets it.
   * Brainfuck Syntax:
     *  \> := Increment pointer.
     *  \< := Decrement pointer.
@@ -14,3 +13,7 @@
   1. Upon detection of a loop enter ("["), the contents inside the loop bounds are added into an array to further interpret until current pointer has value of zero.
   2. Upon detection of a loop exit ("]") the interpreter will continue at towards the end of file.
   3. Upon detection of a print ("."), the interpreter will print the ASCII number of the character and store the content into an array to print at the very end as an ASCII value. 
+
+As I have only uploaded the C file, you must compile the code before running: gcc -o ./bf ./brainfuck.c
+
+Run the executable with the bf.txt: ./bf ./bf.txt
